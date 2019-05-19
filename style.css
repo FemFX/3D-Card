@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing : border-box;
+            box-sizing : border-box;
+}
+.container{
+    display : -webkit-box;
+    display : -ms-flexbox;
+    display : -webkit-box;
+    display : flex;
+    height: 100vh;
+    background-color : #f0932b;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.card{
+   -webkit-perspective: 1000px;
+           perspective: 1000px;
+   -webkit-transform-style: preserve-3d;
+           transform-style: preserve-3d;
+}
+.card-item{
+    background: #fff;
+    width: 250px;
+    -webkit-transition: -webkit-transform 0.4;
+    transition: -webkit-transform 0.4;
+    transition: transform 0.4;
+    transition: transform 0.4, -webkit-transform 0.4;
+    height: 250px;
+
+}
